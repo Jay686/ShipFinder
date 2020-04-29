@@ -82,6 +82,11 @@
             to {opacity: 1;}
         }
 
+        .field {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
     </style>
 </head>
 
@@ -94,20 +99,28 @@
         <div id="Login" class="tabcontent">
             <h1>Welcome Back!</h1>
             <form action="/">
-                <label id="icon" for="name"><i class="icon-user"></i></label>
-                <input type="text" name="name" id="name" placeholder="Name" required/>
-                <label id="icon" for="name"><i class="icon-shield"></i></label>
-                <input type="password" name="name" id="name" placeholder="Password" required/>
+                <div class="field">
+                    <label id="icon" for="name"><i class="icon-user"></i></label>
+                    <input type="text" name="name" id="name" placeholder="Name" required/>
+                </div>
+                <div class="field">
+                    <label id="icon" for="name"><i class="icon-shield"></i></label>
+                    <input type="password" name="name" id="name" placeholder="Password" required/>
+                </div>
                 <a href="#" class="button">Login</a>
             </form>
         </div>
         <div id="Sign Up" class="tabcontent">
-            <h1>Sign Up for Free!</h1>
+            <h1>Register Here!</h1>
             <form action="/">
-                <label id="icon" for="name"><i class="icon-user"></i></label>
-                <input type="text" name="name" id="name" placeholder="Name" required/>
-                <label id="icon" for="name"><i class="icon-shield"></i></label>
-                <input type="password" name="name" id="name" placeholder="Password" required/>
+                <div class="field">
+                    <label id="icon" for="name"><i class="icon-user"></i></label>
+                    <input type="text" name="name" id="name" placeholder="Name" required/>
+                </div>
+                <div class="field">
+                    <label id="icon" for="name"><i class="icon-shield"></i></label>
+                    <input type="password" name="name" id="name" placeholder="Password" required/>
+                </div>
                 <a href="#" class="button">Sign Up</a>
             </form>
         </div>
