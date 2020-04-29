@@ -76,7 +76,7 @@
 <body>
     <div class="wrap">
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Login')">Login</button>
+            <button class="tablinks" onclick="openTab(event, 'Login')" id="defaultOpen">Login</button>
             <button class="tablinks" onclick="openTab(event, 'Sign Up')">Sign Up</button>
         </div>
         <div id="Login" class="tabcontent">
@@ -113,8 +113,11 @@
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
             document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
+            evt.currentTarget.className += " active";    
         }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
     </script>
 </body>
 </html>
