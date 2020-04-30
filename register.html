@@ -8,6 +8,11 @@
     <style>
         body {
             background-color: #E5F3FE;
+            background-image: url("image/features-ocean-basins.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
             height: 100vh;
             width: 100vw;
             display: flex;
@@ -19,7 +24,7 @@
 
          /* Style the wrap */
          .wrap {
-            background: rgb(90, 166, 224);
+            background: #f1f1f1;
             padding: 40px;
             max-width: 600px;
             margin: 40px auto;
@@ -30,9 +35,7 @@
         /* Style the tab */
         .tab {
             overflow: hidden;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f1f1f1;
+            background-color: transparent;
         }
 
         /* Style the buttons that are used to open the tab content */
@@ -41,7 +44,7 @@
             float: left;
             border: none;
             outline: none;
-            color: #7f9692;
+            color: rgb(0, 0, 0);
             font-size: 20px;
             float: left;
             width: 50%;
@@ -54,12 +57,12 @@
 
         /* Change background color of buttons on hover */
         .tab button:hover {
-            background-color: rgba(190,18,240);
+            background-color: #f1f1a1;
         }
 
         /* Create an active/current tablink class */
         .tab button.active {
-            background-color: rgb(76, 27, 255);
+            background-color: rgb(65, 125, 255);
         }
 
         /* Style the tab content */
@@ -95,10 +98,34 @@
             background: none;
             background-image: none;
             border: 1px solid #ccc;
-            color: #ffffff;
+            color: #0a0000;
             border-radius: 0;
             -webkit-transition: border-color .25s ease, box-shadow .25s ease;
             transition: border-color .25s ease, box-shadow .25s ease;
+        }
+
+        .button {
+            float: right;
+            padding: 5px 10px;
+            font-size: 20px;
+            width: 35%;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: rgb(49, 43, 105);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #5d5af8}
+
+        .button:active {
+            background-color: #000000;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
         }
 
     </style>
@@ -121,7 +148,7 @@
                     <label id="icon" for="name"><i class="fas fa-key"></i></label>
                     <input type="password" name="name" id="name" placeholder="Password" required/>
                 </div>
-                <a href="#" class="button">Login</a>
+                <button class="button" type="submit">Login</button>
             </form>
         </div>
         <div id="Sign Up" class="tabcontent">
@@ -135,7 +162,7 @@
                     <label id="icon" for="name"><i class="fas fa-key"></i></label>
                     <input type="password" name="name" id="name" placeholder="Password" required/>
                 </div>
-                <a href="#" class="button">Sign Up</a>
+                <button class="button" type="submit">Sign Up</button>
             </form>
         </div>
     </div>
