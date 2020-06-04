@@ -1,0 +1,23 @@
+{
+  "name": "shipfinder",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/Jay686/ShipFinder/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "demo_fileserver.js",
+  "dependencies": {
+    "mongodb": "^3.5.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jay686/ShipFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jay686/ShipFinder/issues"
+  },
+  "homepage": "https://github.com/Jay686/ShipFinder#readme"
+}
