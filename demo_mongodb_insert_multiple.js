@@ -6,19 +6,19 @@ MongodbClient.connect(url, {useUnifiedTopology: true}, function(err, db) {
     var dbo = db.db("mydb");
     var myobj = [
         { name: 'John', address: 'Highway 71'},
-        { name: 'Peter', adress: 'Lowstreet 4'},
-        { name: 'Amy', adress: 'Apple st 652'},
+        { name: 'Peter', address: 'Lowstreet 4'},
+        { name: 'Amy', address: 'Apple st 652'},
         { name: 'Hannah', address: 'Mountain 21'},
-        { name: 'Michael', adress: 'Valley 345'},
-        { name: 'Sandy', adress: 'Ocean blvd 2'},
+        { name: 'Michael', address: 'Valley 345'},
+        { name: 'Sandy', address: 'Ocean blvd 2'},
         { name: 'Betty', address: 'Green Grass 1'},
-        { name: 'Richard', adress: 'Sky st 331'},
-        { name: 'Susan', adress: 'One Way 98'},
+        { name: 'Richard', address: 'Sky st 331'},
+        { name: 'Susan', address: 'One Way 98'},
         { name: 'Vicky', address: 'Yellow Garden 2'},
-        { name: 'Ben', adress: 'Park Lane 38'},
-        { name: 'William', adress: 'Central st 954'},
-        { name: 'Chuck', adress: 'Main Road 989'},
-        { name: 'Viola', adress: 'Sideway 1633'}
+        { name: 'Ben', address: 'Park Lane 38'},
+        { name: 'William', address: 'Central st 954'},
+        { name: 'Chuck', address: 'Main Road 989'},
+        { name: 'Viola', address: 'Sideway 1633'}
     ];
     dbo.collection("customers").insertMany(myobj, function(err, res) {
         if(err) throw err;
