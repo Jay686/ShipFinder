@@ -15,7 +15,7 @@ var userName;
 db.get(db1, user, 101).then((res) => {
 	userName = res.name;
 }).then(
-	db.update(db1, user, userName, {name: 'Mary'})
+	db.update(db1, user, userName, {name: 'Mry'})
 ).then(
 	db.get(db1, user, 101).then((res) => {
 	console.log(res);
